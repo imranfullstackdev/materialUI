@@ -7,7 +7,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 const Navbar = () => {
   return (
     <>
-      <AppBar position="sticky" color="primary">
+      <AppBar position="sticky" sx={{background:'white',color:'black'}}>
         <Toolbar>
           <Typography variant="h6" flexGrow={1}>
             LMV IT SOLUTION

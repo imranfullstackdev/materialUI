@@ -28,7 +28,8 @@ const ContactUs = () => {
           Contact Us
         </Typography>
       </center>
-      <Box component={"form"} onSubmit={formik.handleSubmit}>
+      <center>
+      <Box component={"form"} onSubmit={formik.handleSubmit} sx={{alignContent:'center'}}>
         <TextField
           id="outlined-basic"
           label="First Name"
@@ -73,7 +74,7 @@ const ContactUs = () => {
           multiline
           fullWidth
           rows={4}
-          sx={{ m: 1 }}
+          sx={{ m: 2,}}
           name="message"
           onChange={formik.handleChange}
           error={formik.touched.phone && formik.errors.message}
@@ -81,11 +82,12 @@ const ContactUs = () => {
           onBlur={formik.handleBlur}
         />
         <center>
-          <Button size="large" variant="contained" type="submit" mt={5} mb={5}>
+          <Button size="large" sx={{background:'black',color:'white'}} type="submit" mt={5} mb={5}>
             send
           </Button>
         </center>
       </Box>
+      </center>
     </>
   );
 };
